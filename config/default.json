@@ -1,0 +1,6 @@
+{
+    "port":"5000",
+    "mongodb":"mongodb+srv://Yura:1234qwerty@cluster0.kqk1q.mongodb.net/DB?retryWrites=true&w=majority",
+    "jwtSecret":"hey you little sh",
+    "pass":"maybeyoushouldnot"
+}

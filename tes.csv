@@ -1,0 +1,26 @@
+name,productid,desc,img,quantity,price,category
+Jeans 1,1,Simple jeans for you 1,jeans1.jpg,5,40,cloth jeans
+Jeans 2,2,Simple jeans for you 2,jeans2.jpg,7,46,cloth jeans
+Jeans 3,3,Simple jeans for you 3,jeans3.jpg,3,34,cloth jeans
+Jeans 4,4,Simple jeans for you 4,jeans4.jpg,12,56,cloth jeans
+Jacket 1,5,Simple jacket for you 1,jacket1.jpg,11,53,cloth jackets
+Jacket 2,6,Simple jacket for you 2,jacket2.jpg,12,56,cloth jackets
+Jacket 3,7,Simple jacket for you 3,jacket3.jpg,14,60,cloth jackets
+Jacket 4,8,Simple jacket for you 4,jacket4.jpg,16,63.8,cloth jackets
+Sweater 1,9,Simple sweater for you 51,sweater1.jpg,5,67.15,cloth sweaters
+Sweater 2,10,Simple sweater for you 52,sweater2.jpg,7,70.71666667,cloth sweaters
+Sweater 3,11,Simple sweater for you 53,sweater3.jpg,3,74.28333333,cloth sweaters
+Sweater 4,12,Simple sweater for you 54,sweater4.jpg,3,77.85,cloth sweaters
+foxmushroom1,13,Simple foxmushroom1 for you1,foxmushroom1.jpg,15,48,garden mushrooms
+whitemushroom1,14,Simple whitemushroom1 for you2,whitemushroom1.jpg,64,36,garden mushrooms
+appletree1,15,Simple appletree1 for you3,appletree1.jpg,45,13,garden trees
+oak1,16,Simple oak1 for you4,oak1.jpg,34,51,garden trees
+bamboo1,17,Simple bamboo1 for you5,bamboo1.jpg,34,12,garden trees bamboos
+notebook1,18,Simple notebook1 for you6,notebook1.jpg,34,111344,notebooks_etc notebooks
+notebook2,19,Simple notebook1 for you7,notebook2.jpg,124,12345,notebooks_etc notebooks
+notebook3,20,Simple notebook1 for you8,notebook3.jpg,234,1124,notebooks_etc notebooks
+notebook4,21,Simple notebook1 for you9,notebook4.jpg,43,121234,notebooks_etc notebooks
+smartphone1,22,Simple smartphone1 for you10,smartphone1.jpg,123,1343,notebooks_etc smartphones
+smartphone2,23,Simple smartphone1 for you11,smartphone2.jpg,124,31134,notebooks_etc smartphones
+smartphone3,24,Simple smartphone1 for you12,smartphone3.jpg,543,233,notebooks_etc smartphones
+smartphone4,25,Simple smartphone1 for you13,smartphone4.jpg,412,13243,notebooks_etc smartphones
