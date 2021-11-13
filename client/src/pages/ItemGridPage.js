@@ -27,7 +27,6 @@ export const ItemGridPage = () => {
   }, [request, setItems, searchreq, history]);
   useEffect(()=>{
     Search()
-    
     console.log(searchreq)
   },[Search, searchreq])
   if (!items) {

@@ -21,23 +21,22 @@ async function findItems(prods, request){
 router.post("/banner", async (req, res) => {
   
   const { count, bannertype } = req.body;
-  if(bannertype.id===1){
-
-    const banneritems = await bycat(count, bannertype.category, req.app.locals.DB.prods);
-
-    res.status(201).json({ banneritems });
-  }else if(bannertype.id===2){
-    
-  const banneritems = await bypop(count,req.app.locals.DB.prods);
-
-  res.status(201).json({ banneritems });
-  }else if(bannertype.id===0){
-
-    const banneritems = await random(count,req.app.locals.DB.prods);
-
-    res.status(201).json({ banneritems });
-  } else{
-    res.status(404).json({message:"Not found"})
+  let banneritems;
+  switch(bannertype.id){
+    case 0:
+      banneritems = await random(count,req.app.locals.DB.prods);
+      res.status(201).json({ banneritems });
+      break;
+    case 1:
+      banneritems = await bycat(count, bannertype.category, req.app.locals.DB.prods);
+      res.status(201).json({ banneritems });
+      break;
+    case 2:
+      banneritems = await bypop(count,req.app.locals.DB.prods);
+      res.status(201).json({ banneritems });
+    break;
+    default:
+      res.status(404).json({message:"Not found"})
   }
 });
 

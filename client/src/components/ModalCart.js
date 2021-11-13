@@ -2,8 +2,11 @@ import path from "path";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { add } from "../redux/cart/cartSlice";
 
 export const ModalCart = () => {
+  const dispatch = useDispatch()
   const location = useLocation();
   const { item } = location.state;
   const [num, setNum] = useState(1);
@@ -21,9 +24,10 @@ export const ModalCart = () => {
     if (e.target.value === "") {
       setNum(0);
     }
-    console.log(parsed);
   };
-
+  const processHandle = (e) =>{
+    dispatch(add(num))
+  }
   useEffect(() => {
     const M = window.M;
     M.AutoInit();
@@ -56,12 +60,14 @@ export const ModalCart = () => {
         </i>
         <div className="col l2 center-align">{item.price * num} ₴</div>
         <div className="col l2 row">
+          {}
           <button
-            className="col l12 modal-close waves-effect waves-green btn item-btn"
+            onClick={processHandle}
+            className="col l12 modal-close waves-effect waves-green btn item-btn modal-close"
           >
             Add to cart
           </button>
-          <Link to="/order" className="col l12 modal-close waves-effect waves-green btn">
+          <Link onClick={processHandle} to="/order" className="col l12 modal-close waves-effect waves-green btn">
             Order
           </Link>
         </div>
